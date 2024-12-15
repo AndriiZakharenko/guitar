@@ -1,0 +1,95 @@
+//========================= MAIN_WHY =========================//
+
+.why {
+    background-color: $black1;
+    padding-top: rem(90);
+    padding-bottom: rem(90);
+
+    // .why__container
+    &__container {
+    }
+
+    // .why__title
+    &__title {
+        margin-bottom: rem(35);
+        color: $white;
+    }
+
+    // .why__items
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-between;
+        gap: rem(30);
+    }
+
+    // .why__item
+    &__item {
+    }
+}
+
+.item-why {
+    display: grid;
+    justify-items: center;
+    padding: rem(40);
+    text-align: center;
+
+    // .item-why__icon
+    &__icon {
+        background-color: $black3;
+        border-radius: rem(20);
+        display: flex;
+        width: rem(72);
+        height: rem(72);
+        justify-content: center;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: rem(40);
+        }
+    }
+
+    // .item-why__title
+    &__title {
+        text-transform: uppercase;
+        font-weight: $SemiBold;
+        color: $white;
+        font-size: rem(18);
+        line-height: 1.5;
+        letter-spacing: em(2);
+
+        &:not(:last-child) {
+            margin-bottom: rem(12);
+        }
+    }
+
+    // .item-why__text
+    &__text {
+        font-size: rem(14);
+        line-height: 1.5;
+    }
+}
+
+//========================= MAIN_WHY (BREAKPOINTS) =========================//
+
+@media (max-width: $tablet) {
+    .why {
+        padding-top: rem(50);
+        padding-bottom: rem(50);
+    }
+
+    .why__items {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (max-width: $mobileLarge) {
+    .item-why{
+        padding: rem(20);
+    }
+
+    .why__items {
+        grid-template-columns: repeat(1, auto);
+        justify-content: stretch;
+    }
+}

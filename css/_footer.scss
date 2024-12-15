@@ -1,0 +1,187 @@
+//========================= FOOTER =========================//
+
+.footer {
+    background-color: $grey4;
+    padding-top: rem(80);
+    padding-bottom: rem(40);
+
+    // .footer__container
+    &__container {
+    }
+
+    // .footer__body
+    &__body {
+    }
+
+    // .footer__copy
+    &__copy {
+        padding-top: rem(80);
+        text-align: center;
+    }
+}
+.body-footer {
+    display: flex;
+    gap: rem(50);
+
+    // .body-footer__column
+    &__column {
+        &_full {
+            flex: 1 1 auto;
+        }
+    }
+
+    // .body-footer__logo
+    &__logo {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-bottom: rem(28);
+        }
+    }
+
+    // .body-footer__contacts
+    &__contacts {
+    }
+
+    // .body-footer__menu
+    &__menu {
+    }
+
+    // .body-footer__social
+    &__social {
+    }
+}
+.contacts-footer {
+    // .contacts-footer__item
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: rem(20);
+        }
+    }
+
+    // .contacts-footer__link
+    &__link {
+        display: inline-block;
+        padding-left: rem(44);
+        line-height: 1.5;
+        color: $grey;
+
+        &:hover{
+            text-decoration: underline;
+        }
+
+        // .contacts-footer__link_mail
+        &_mail {
+            background: url(../img/footer/contacts/01.svg) left no-repeat;
+        }
+
+        // .contacts-footer__link_location
+        &_location {
+            background: url(../img/footer/contacts/02.svg) left no-repeat;
+        }
+    }
+}
+.menu-footer {
+    display: flex;
+    gap: rem(120);
+    justify-content: center;
+
+    // .menu-footer__column
+    &__column {
+    }
+
+    // .menu-footer__title
+
+    &__title {
+        text-transform: uppercase;
+        color: $black;
+        font-size: rem(18);
+        line-height: 1.5;
+        margin-bottom: rem(20);
+        font-weight: $SemiBold;
+    }
+
+    // .menu-footer__list
+    &__list {
+    }
+
+    // .menu-footer__item
+    &__item {
+
+        &:not(:last-child){
+            margin-bottom: rem(16);
+        }
+    }
+
+    // .menu-footer__link
+    &__link {
+        color: $grey;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.social-footer {
+    // .social-footer__title
+    &__title {
+        text-transform: uppercase;
+        color: $black;
+        font-size: rem(18);
+        font-weight: $SemiBold;
+        line-height: 1.5;
+        margin-bottom: rem(12);
+    }
+
+    // .social-footer__items
+    &__items {
+        display: flex;
+        gap: rem(20);
+        align-items: center;
+    }
+
+    // .social-footer__item
+    &__item {
+    }
+}
+
+//========================= FOOTER (BREAKPOINTS) =========================//
+
+@media (max-width:$tablet){
+    .footer{
+        padding-top: rem(30);
+        padding-bottom: rem(30);
+    }
+
+    .body-footer{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .body-footer__column{
+
+        &:first-child{
+            flex: 1 1 100%;
+        }
+    }
+
+    .body-footer__column_full{
+        flex: 0 1 50%;
+    }
+
+    .menu-footer{
+        display: flex;
+        gap: rem(50);
+        justify-content: space-between;
+    }
+
+    .social-footer__items{
+        gap: rem(15);
+    }
+}
+
+@media (max-width:$mobileLarge){
+    .footer__copy{
+        padding-top: rem(50);
+    }
+}

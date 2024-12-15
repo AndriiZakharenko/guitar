@@ -1,0 +1,139 @@
+//========================= MAIN_STORE =========================//
+
+.store {
+    padding-top: rem(80);
+    padding-bottom: rem(90);
+
+    // .store__container
+    &__container {
+    }
+
+    // .store__title
+    &__title {
+        margin-bottom: rem(86);
+    }
+
+    // .store__body
+    &__body {
+    }
+}
+.body-store {
+    // .body-store__header
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: rem(15);
+        margin-bottom: rem(32);
+        flex-wrap: wrap;
+    }
+
+    // .body-store__title
+    &__title {
+        letter-spacing: em(1.5);
+        font-size: rem(20);
+        line-height: 1.5;
+        text-transform: uppercase;
+        color: $black1;
+        font-weight: $SemiBold;
+    }
+
+    // .body-store__all
+    &__all {
+        color: $grey2;
+        font-size: rem(20);
+        line-height: 1.5;
+        font-weight: $Medium;
+    }
+
+    // .body-store__items
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: rem(54);
+    }
+
+    // .body-store__item
+    &__item {
+    }
+}
+
+.item {
+    display: grid;
+
+    // .item__image
+    &__image {
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-bottom: rem(40);
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    // .item__title
+    &__title {
+        color: $black1;
+        font-size: rem(16);
+        line-height: 1.5;
+        justify-self: start;
+        font-weight: $Medium;
+
+        &:not(:last-child) {
+            margin-bottom: rem(7);
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    // .item__price
+    &__price {
+        font-size: rem(14);
+        line-height: 1.5;
+    }
+}
+
+//========================= MAIN_STORE (BREAKPOINTS) =========================//
+
+@media (max-width: $tablet) {
+    .store {
+        padding-top: rem(50);
+        padding-bottom: rem(50);
+    }
+
+    .body-store__title {
+        margin-bottom: rem(50);
+    }
+
+    .body-store__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: $mobileLarge) {
+    .store {
+        padding-top: rem(30);
+        padding-bottom: rem(30);
+    }
+
+    .body-store__title {
+        margin-bottom: rem(20);
+    }
+
+    .item__image {
+        &:not(:last-child) {
+            margin-bottom: rem(20);
+        }
+    }
+}
+
+@media (max-width: rem(560)) {
+    .body-store__items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
