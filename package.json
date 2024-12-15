@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "- HTM, CSS (SCSS), JS - BEM - Adaptive",
   "main": "index.js",
+  "homepage": "https://AndriiZakharenko.github.io/guitar",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
@@ -19,7 +20,6 @@
   "bugs": {
     "url": "https://github.com/AndriiZakharenko/guitar/issues"
   },
-  "homepage": "https://github.com/AndriiZakharenko/guitar#readme",
   "devDependencies": {
     "gh-pages": "^6.2.0",
     "vite": "^6.0.3"

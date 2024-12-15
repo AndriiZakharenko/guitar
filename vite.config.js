@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/Guitar",
+  base: "/guitar",
   build: {
     outDir: "dist",
   },
