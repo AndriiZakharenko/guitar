@@ -1,0 +1,216 @@
+//========================= MAIN_REVIEWS =========================//
+
+.reviews {
+    padding-top: rem(240);
+    padding-bottom: rem(240);
+
+    // .reviews__container
+    &__container {
+    }
+
+    // .reviews__title
+    &__title {
+        margin-bottom: rem(100);
+    }
+
+    // .reviews__swiper
+    &__swiper {
+    }
+}
+
+.swiper-reviews {
+    // .swiper-reviews__wrapper
+    &__wrapper {
+    }
+
+    // .swiper-reviews__slide
+    &__slide {
+    }
+
+    // .swiper-reviews__pagination
+    &__pagination {
+        display: flex;
+        transform: translate(rem(0), -100%);
+        justify-content: flex-end;
+
+        .swiper-pagination-bullet {
+            opacity: 1;
+            background-color: $grey3;
+            border-radius: rem(20);
+            flex: 0 0 rem(10);
+            height: rem(16);
+            transition: all 0.3s ease 0s;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: $orange1;
+            flex: 0 0 rem(24);
+        }
+    }
+}
+
+.slide-swiper-reviews {
+    display: flex;
+
+    // .slide-swiper-reviews__picture
+    &__picture {
+        overflow: hidden;
+        flex: 0 1 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // .slide-swiper-reviews__image
+    &__image {
+        width: rem(320);
+        height: rem(320);
+        position: relative;
+
+        img {
+            border-radius: 50%;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: center;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: rem(285);
+            height: rem(257);
+            top: rem(50);
+            left: rem(-80);
+            transform: rotate(-10deg);
+            background-color: $orange1;
+            border-radius: rem(40) rem(0) rem(400) rem(400);
+        }
+    }
+
+    // .slide-swiper-reviews__body
+    &__body {
+        flex: 0 1 50%;
+    }
+
+    // .slide-swiper-reviews__text
+    &__text {
+        font-size: rem(24);
+        line-height: 1.6;
+
+        &:not(:last-child) {
+            margin-bottom: rem(56);
+        }
+        p {
+            &:not(:last-child) {
+                margin-bottom: rem(15);
+            }
+        }
+    }
+    // .slide-swiper-reviews__author
+    &__author {
+    }
+
+    // .slide-swiper-reviews__name
+    &__name {
+        font-size: rem(24);
+        line-height: 1.6;
+        font-weight: $SemiBold;
+        color: $black;
+
+        &:not(:last-child) {
+            margin-bottom: rem(8);
+        }
+    }
+
+    // .slide-swiper-reviews__position
+    &__position {
+        color: $grey2;
+        font-size: rem(18);
+        letter-spacing: em(2);
+        font-weight: $Regular;
+        text-transform: uppercase;
+    }
+}
+
+//========================= MAIN_REVIEWS (BREAKPOINTS) =========================//
+
+@media (max-width: rem(1230)) {
+    .reviews__swiper.swiper {
+            margin-left: rem(-15);
+        }
+    
+}
+
+@media (max-width: $tablet) {
+    .reviews {
+        padding-top: rem(80);
+        padding-bottom: rem(80);
+    }
+
+    .reviews__title {
+        margin-bottom: rem(50);
+    }
+
+    .slide-swiper-reviews {
+        flex-direction: column;
+    }
+
+    .slide-swiper-reviews__body {
+        padding-left: rem(15);
+    }
+
+    .slide-swiper-reviews__picture {
+        margin-bottom: rem(25);
+    }
+
+    .swiper-reviews__pagination.swiper-pagination {
+            position: relative;
+            bottom: 0;
+            justify-content: center;
+            transform: translate(rem(0), rem(0));
+            padding-top: rem(35);
+        }
+}
+
+@media (max-width: $mobileLarge) {
+    .reviews {
+        padding-top: rem(30);
+        padding-bottom: rem(30);
+    }
+
+    .reviews__title {
+        margin-bottom: rem(30);
+    }
+}
+
+@media (max-width: $mobileSmall) {
+    .slide-swiper-reviews__image {
+        width: rem(270);
+        height: rem(270);
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: rem(225);
+            height: rem(187);
+            top: rem(50);
+            left: rem(-80);
+            transform: rotate(-10deg);
+            background-color: $orange1;
+            border-radius: rem(40) rem(0) rem(400) rem(400);
+        }
+    }
+
+    .slide-swiper-reviews__text {
+        font-size: rem(18);
+    }
+
+    .slide-swiper-reviews__text {
+        &:not(:last-child) {
+            margin-bottom: rem(25);
+        }
+    }
+}

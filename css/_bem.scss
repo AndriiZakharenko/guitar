@@ -1,0 +1,55 @@
+//========================= BEM =========================//
+
+//========================= PAGE =========================//
+.page {
+    // .page__main
+    &__main {
+    }
+
+    // .page__store
+    &__store {
+    }
+
+    // .page__categories
+    &__categories {
+    }
+
+    // .page__brands
+    &__brands {
+    }
+
+    // .page__why
+    &__why {
+    }
+
+    // .page__reviews
+    &__reviews {
+    }
+
+    // .page__favorite
+    &__favorite {
+    }
+}
+
+//========================= TITLE =========================//
+
+.title {
+    font-family: $calsans;
+    font-weight: $SemiBold;
+    color: $black1;
+    font-size: rem(44);
+    line-height: 1.2;
+    text-align: center;
+
+    span {
+        color: $orange1;
+    }
+}
+
+//========================= BEM (BREAKPOINTS) =========================//
+
+@media (max-width: $mobileLarge) {
+    .title {
+        font-size: rem(38);
+    }
+}
