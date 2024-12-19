@@ -1,8 +1,18 @@
 # Guitar
 
-- HTM, CSS (SCSS), JS
-- BEM
+### Description
+
+- Created a landing page
+
+### Stack
+
+- HTML (BEM)
+- CSS (SCSS)
+- JS
 - Adaptive
+
+### Tools
+
 - Vite
 
 ## Demo Links
