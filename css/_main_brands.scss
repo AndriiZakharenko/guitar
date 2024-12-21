@@ -1,19 +1,12 @@
-//========================= MAIN_BRANDS =========================//
-
 .brands {
     padding-top: rem(110);
     padding-bottom: rem(180);
-
-    // .brands__container
-    &__container {
-    }
 
     // .brands__title
     &__title {
         margin-bottom: rem(75);
     }
 
-    // .brands__items
     &__items {
         max-width: rem(1020);
         margin: 0 auto;
@@ -25,15 +18,12 @@
         row-gap: rem(80);
     }
 
-    // .brands__item
     &__item {
         img {
             max-width: 100%;
         }
     }
 }
-
-//========================= MAIN_BRANDS (BREAKPOINTS) =========================//
 
 @media (max-width: $tablet) {
     .brands {

@@ -1,14 +1,10 @@
-//========================= MAIN_MAINBLOCK =========================//
-
 .main {
     padding-bottom: rem(80);
 
-    // .main__container
     &__container {
         display: flex;
     }
 
-    // .main__content
     &__content {
         flex: 0 1 50%;
         align-self: flex-end;
@@ -17,7 +13,6 @@
         padding-right: rem(20);
     }
 
-    // .main__title
     &__title {
         font-family: $calsans;
         font-weight: $SemiBold;
@@ -34,7 +29,6 @@
         }
     }
 
-    // .main__text
     &__text {
         line-height: 1.5;
         font-weight: $Medium;
@@ -45,18 +39,11 @@
         }
     }
 
-    // .main__actions
-    &__actions {
-    }
-
-    // .main__decor
     &__decor {
         flex: 0 1 50%;
     }
 
-    // .main__image
     &__image {
-        //display: inline-block;
         margin-right: rem(-135);
         position: relative;
         padding-bottom: 97.6%;
@@ -88,7 +75,6 @@
     display: flex;
     align-items: center;
 
-    // .actions-main__button
     &__button {
         text-align: center;
         padding: rem(18.5) rem(45);
@@ -108,15 +94,12 @@
         }
     }
 
-    // .actions-main__icon
     &__icon {
         &:not(:last-child) {
             margin-right: rem(27);
         }
     }
 }
-
-//========================= MAIN_MAINBLOCK (BREAKPOINTS) =========================//
 
 @media (max-width: $pc) {
     .main__content {

@@ -1,19 +1,11 @@
-//========================= MAIN_CATEGORIES =========================//
-
 .categories {
     padding-top: rem(90);
     padding-bottom: rem(110);
 
-    // .categories__container
-    &__container {
-    }
-
-    // .categories__title
     &__title {
         margin-bottom: rem(80);
     }
 
-    // .categories__items
     &__items {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -21,9 +13,6 @@
         row-gap: rem(35);
     }
 
-    // .categories__item
-    &__item {
-    }
 }
 
 .item-categories {
@@ -37,7 +26,6 @@
         }
     }
 
-    // .item-categories__title
     &__title {
         text-align: center;
         position: absolute;
@@ -52,7 +40,6 @@
         z-index: 3;
     }
 
-    // .item-categories__image
     &__image {
         position: relative;
         overflow: hidden;
@@ -81,8 +68,6 @@
         }
     }
 }
-
-//========================= MAIN_CATEGORIES (BREAKPOINTS) =========================//
 
 @media (max-width: 1230px) {
     .categories__items {

@@ -1,33 +1,17 @@
-//========================= MAIN_REVIEWS =========================//
-
 .reviews {
     padding-top: rem(240);
     padding-bottom: rem(240);
 
-    // .reviews__container
-    &__container {
-    }
-
-    // .reviews__title
     &__title {
         margin-bottom: rem(100);
     }
 
-    // .reviews__swiper
     &__swiper {
     }
 }
 
 .swiper-reviews {
-    // .swiper-reviews__wrapper
-    &__wrapper {
-    }
 
-    // .swiper-reviews__slide
-    &__slide {
-    }
-
-    // .swiper-reviews__pagination
     &__pagination {
         display: flex;
         transform: translate(rem(0), -100%);
@@ -52,7 +36,6 @@
 .slide-swiper-reviews {
     display: flex;
 
-    // .slide-swiper-reviews__picture
     &__picture {
         overflow: hidden;
         flex: 0 1 50%;
@@ -61,7 +44,6 @@
         align-items: center;
     }
 
-    // .slide-swiper-reviews__image
     &__image {
         width: rem(320);
         height: rem(320);
@@ -90,12 +72,10 @@
         }
     }
 
-    // .slide-swiper-reviews__body
     &__body {
         flex: 0 1 50%;
     }
 
-    // .slide-swiper-reviews__text
     &__text {
         font-size: rem(24);
         line-height: 1.6;
@@ -109,11 +89,7 @@
             }
         }
     }
-    // .slide-swiper-reviews__author
-    &__author {
-    }
 
-    // .slide-swiper-reviews__name
     &__name {
         font-size: rem(24);
         line-height: 1.6;
@@ -125,7 +101,6 @@
         }
     }
 
-    // .slide-swiper-reviews__position
     &__position {
         color: $grey2;
         font-size: rem(18);
@@ -134,8 +109,6 @@
         text-transform: uppercase;
     }
 }
-
-//========================= MAIN_REVIEWS (BREAKPOINTS) =========================//
 
 @media (max-width: rem(1230)) {
     .reviews__swiper.swiper {

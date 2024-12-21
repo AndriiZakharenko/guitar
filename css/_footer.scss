@@ -1,19 +1,9 @@
-//========================= FOOTER =========================//
-
 .footer {
     background-color: $grey4;
     padding-top: rem(80);
     padding-bottom: rem(40);
 
-    // .footer__container
-    &__container {
-    }
 
-    // .footer__body
-    &__body {
-    }
-
-    // .footer__copy
     &__copy {
         padding-top: rem(80);
         text-align: center;
@@ -23,14 +13,12 @@
     display: flex;
     gap: rem(50);
 
-    // .body-footer__column
     &__column {
         &_full {
             flex: 1 1 auto;
         }
     }
 
-    // .body-footer__logo
     &__logo {
         display: inline-block;
 
@@ -39,27 +27,14 @@
         }
     }
 
-    // .body-footer__contacts
-    &__contacts {
-    }
-
-    // .body-footer__menu
-    &__menu {
-    }
-
-    // .body-footer__social
-    &__social {
-    }
 }
 .contacts-footer {
-    // .contacts-footer__item
     &__item {
         &:not(:last-child) {
             margin-bottom: rem(20);
         }
     }
 
-    // .contacts-footer__link
     &__link {
         display: inline-block;
         padding-left: rem(44);
@@ -70,12 +45,10 @@
             text-decoration: underline;
         }
 
-        // .contacts-footer__link_mail
         &_mail {
             background: url(../img/footer/contacts/01.svg) left no-repeat;
         }
 
-        // .contacts-footer__link_location
         &_location {
             background: url(../img/footer/contacts/02.svg) left no-repeat;
         }
@@ -86,12 +59,6 @@
     gap: rem(120);
     justify-content: center;
 
-    // .menu-footer__column
-    &__column {
-    }
-
-    // .menu-footer__title
-
     &__title {
         text-transform: uppercase;
         color: $black;
@@ -101,29 +68,20 @@
         font-weight: $SemiBold;
     }
 
-    // .menu-footer__list
-    &__list {
-    }
-
-    // .menu-footer__item
     &__item {
-
         &:not(:last-child){
             margin-bottom: rem(16);
         }
     }
 
-    // .menu-footer__link
     &__link {
         color: $grey;
-
         &:hover{
             text-decoration: underline;
         }
     }
 }
 .social-footer {
-    // .social-footer__title
     &__title {
         text-transform: uppercase;
         color: $black;
@@ -133,19 +91,13 @@
         margin-bottom: rem(12);
     }
 
-    // .social-footer__items
     &__items {
         display: flex;
         gap: rem(20);
         align-items: center;
     }
 
-    // .social-footer__item
-    &__item {
-    }
 }
-
-//========================= FOOTER (BREAKPOINTS) =========================//
 
 @media (max-width:$tablet){
     .footer{

@@ -1,21 +1,13 @@
-//========================= MAIN_WHY =========================//
-
 .why {
     background-color: $black1;
     padding-top: rem(90);
     padding-bottom: rem(90);
 
-    // .why__container
-    &__container {
-    }
-
-    // .why__title
     &__title {
         margin-bottom: rem(35);
         color: $white;
     }
 
-    // .why__items
     &__items {
         display: grid;
         grid-template-columns: repeat(3, auto);
@@ -23,9 +15,6 @@
         gap: rem(30);
     }
 
-    // .why__item
-    &__item {
-    }
 }
 
 .item-why {
@@ -34,7 +23,6 @@
     padding: rem(40);
     text-align: center;
 
-    // .item-why__icon
     &__icon {
         background-color: $black3;
         border-radius: rem(20);
@@ -49,7 +37,6 @@
         }
     }
 
-    // .item-why__title
     &__title {
         text-transform: uppercase;
         font-weight: $SemiBold;
@@ -63,14 +50,11 @@
         }
     }
 
-    // .item-why__text
     &__text {
         font-size: rem(14);
         line-height: 1.5;
     }
 }
-
-//========================= MAIN_WHY (BREAKPOINTS) =========================//
 
 @media (max-width: $tablet) {
     .why {

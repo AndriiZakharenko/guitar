@@ -1,21 +1,16 @@
-//========================= MAIN_FAVORITE =========================//
-
 .favorite {
     padding-bottom: rem(120);
 
-    // .favorite__container
     &__container {
         display: flex;
         align-items: center;
     }
 
-    // .favorite__body
     &__body {
         flex: 0 1 50%;
         padding-right: rem(20);
     }
 
-    // .favorite__title
     &__title{
         text-align: left;
         font-size: rem(48);
@@ -26,11 +21,6 @@
         }
     }
 
-    // .favorite__apps
-    &__apps {
-    }
-
-    // .favorite__images
     &__images {
         flex: 0 1 50%;
         text-align: center;
@@ -45,13 +35,10 @@
     display: flex;
     gap: rem(25);
 
-    // .apps-favorite__item
     &__item {
         max-width: 100%;
     }
 }
-
-//========================= MAIN_FAVORITE (BREAKPOINTS) =========================//
 
 @media (max-width: $tablet){
     .favorite{

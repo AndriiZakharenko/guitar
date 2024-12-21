@@ -1,24 +1,13 @@
-//========================= MAIN_STORE =========================//
-
 .store {
     padding-top: rem(80);
     padding-bottom: rem(90);
 
-    // .store__container
-    &__container {
-    }
-
-    // .store__title
     &__title {
         margin-bottom: rem(86);
     }
 
-    // .store__body
-    &__body {
-    }
 }
 .body-store {
-    // .body-store__header
     &__header {
         display: flex;
         align-items: center;
@@ -28,7 +17,6 @@
         flex-wrap: wrap;
     }
 
-    // .body-store__title
     &__title {
         letter-spacing: em(1.5);
         font-size: rem(20);
@@ -38,7 +26,6 @@
         font-weight: $SemiBold;
     }
 
-    // .body-store__all
     &__all {
         color: $grey2;
         font-size: rem(20);
@@ -46,22 +33,17 @@
         font-weight: $Medium;
     }
 
-    // .body-store__items
     &__items {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: rem(54);
     }
 
-    // .body-store__item
-    &__item {
-    }
 }
 
 .item {
     display: grid;
 
-    // .item__image
     &__image {
         text-align: center;
 
@@ -74,7 +56,6 @@
         }
     }
 
-    // .item__title
     &__title {
         color: $black1;
         font-size: rem(16);
@@ -91,14 +72,11 @@
         }
     }
 
-    // .item__price
     &__price {
         font-size: rem(14);
         line-height: 1.5;
     }
 }
-
-//========================= MAIN_STORE (BREAKPOINTS) =========================//
 
 @media (max-width: $tablet) {
     .store {
