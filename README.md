@@ -19,4 +19,4 @@ Created a landing page to browse top-quality guitars online. The page offers a s
 🔗 [Figma](https://www.figma.com/community/file/1087969920549418522)
 
 ## 📜 License
-This project is forked from 💻 [Mate Academy](https://github.com/mate-academy)
+This project is open-source and available for all
